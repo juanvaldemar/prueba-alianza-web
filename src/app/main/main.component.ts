@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ClienteService } from '../service/cliente.service'
+import { Cliente } from '../model/cliente'
 
 
 @Component({
@@ -8,6 +9,7 @@ import { ClienteService } from '../service/cliente.service'
   styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit {
+  clientes:Cliente[] = [];
 
 
   constructor(private clienteService: ClienteService) { 
@@ -19,6 +21,7 @@ export class MainComponent implements OnInit {
 
     this.clienteService.getClientes().subscribe(response =>{
       console.log(response);
+      this.clientes = response;
     })
 
   }

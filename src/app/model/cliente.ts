@@ -4,4 +4,5 @@ export class Cliente {
     bussiness_id:string;
     email:string;
     phone:number;
+    data_added:Date;
 }

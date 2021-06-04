@@ -30,28 +30,26 @@
   <table>
     <thead>
       <tr>
-          <th>Name</th>
-          <th>Item Name</th>
-          <th>Item Price</th>
+          <th>share_key</th>
+          <th>bussiness_id</th>
+          <th>email</th>
+          <th>phone</th>
+          <th>data_added</th>
+          <th>Opciones</th>
       </tr>
     </thead>
   
     <tbody>
-      <tr>
-        <td>Alvin</td>
-        <td>Eclair</td>
-        <td>$0.87</td>
-      </tr>
-      <tr>
-        <td>Alan</td>
-        <td>Jellybean</td>
-        <td>$3.76</td>
-      </tr>
-      <tr>
-        <td>Jonathan</td>
-        <td>Lollipop</td>
-        <td>$7.00</td>
-      </tr>
+      <tr *ngFor="let cliente of clientes">
+        <td>{{cliente.share_key}}</td>
+        <td>{{cliente.bussiness_id}}</td>
+        <td>{{cliente.email}}</td>
+        <td>{{cliente.phone}}</td>
+        <td>{{cliente.data_added | date: 'dd/MM/yyyy'}}</td>
+        <td><button class="waves-effect waves-light btn-large"> <i class="small material-icons">edit</i> </button></td>
+
+        
+    </tr>
     </tbody>
   </table>
 </div>

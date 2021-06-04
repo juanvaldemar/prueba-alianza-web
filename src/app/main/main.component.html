@@ -1,0 +1,72 @@
+<nav class="navbar navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="assets/img/layout_set_logo.png" height="30" class="d-inline-block align-text-top">
+    </a>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="main">
+
+    <!-- Lista de botones -->
+    <div class="row" id="listbuttons">
+      <div class="col-12 my-3">
+        <button type="button" class="btn btn-primary  mr-2 mb-2"><i class="las la-users"></i> Clientes</button>
+        <button (click)="openDialog()" type="button" class="btn btn-primary mr-2 mb-2"><i class="las la-plus"></i>
+          Nuevos Usuario</button>
+        <button (click)="eventExportExcel()" type="button" class="btn btn-primary  mr-2 mb-2"><i
+            class="las la-cloud-download-alt"></i> Exportar</button>
+      </div>
+    </div>
+
+    <!-- Seccion de busqueda -->
+    <div class="row mb-4">
+      <div class="col-md-6 col-sm-12 mb-2">
+        <div>
+          <input [(ngModel)]="textFilter" (input)="eventSearchUsers($event.target.value)" class="form-control"
+            placeholder="Ingrese el bussiness ID">
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12 mb-2">
+        <button type="button" class="btn btn-primary"><i class="las la-search"></i> Advanced
+          Search</button>
+      </div>
+    </div>
+
+
+    <!-- Seccion tabla de usuarios -->
+    <h2>Lista de clientes</h2>
+    <div class="row">
+      <div class="col-12" style="overflow-x: scroll;">
+        <table class="table table-bordered .table-responsive">
+          <thead class="table-light">
+            <tr>
+              <th>share_key</th>
+              <th>bussiness_id</th>
+              <th>email</th>
+              <th>phone</th>
+              <th>data_added</th>
+              <th>Opciones</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr *ngFor="let cliente of clientsFilters">
+              <td>{{cliente.share_key}}</td>
+              <td>{{cliente.bussiness_id}}</td>
+              <td>{{cliente.email}}</td>
+              <td>{{cliente.phone}}</td>
+              <td>{{cliente.data_added | date: 'dd/MM/yyyy'}}</td>
+              <td style="text-align: center;">
+                <button type="button" class="btn btn-outline-primary"><i class="las la-pen"></i></button>
+              </td>
+
+
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

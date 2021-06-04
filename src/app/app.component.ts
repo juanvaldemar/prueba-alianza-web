@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ng-prueba-alianza';
+
+  
+  constructor() { 
+
+  }
+
+  ngOnInit(): void {
+
+     
+  }
+
+
 }

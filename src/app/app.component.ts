@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ClienteService } from './service/cliente.service'
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ng-prueba-alianza';
+
+  
+  constructor(private clienteService: ClienteService) { 
+
+  }
+
+  ngOnInit(): void {
+
+    this.clienteService.getClientes().subscribe(response =>{
+      console.log(response);
+    })
+
+  }
+
+
 }

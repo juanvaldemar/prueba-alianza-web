@@ -1,0 +1,73 @@
+[{
+  "id": 295,
+  "share_key": "jgutierrez",
+  "bussiness_id": "Juliana Gutierrez",
+  "email": "jgutierrez@gmail.com",
+  "phone": 987654211,
+  "data_added": "2021-06-04T05:00:00.000+00:00",
+  "start_date": null,
+  "end_date": null
+}, {
+  "id": 296,
+  "share_key": "mmartinez",
+  "bussiness_id": "Manuel Gutierrez",
+  "email": "mmartinez@gmail.com",
+  "phone": 887654222,
+  "data_added": "2021-06-04T05:00:00.000+00:00",
+  "start_date": null,
+  "end_date": null
+}, {
+  "id": 306,
+  "share_key": "uanValdemar",
+  "bussiness_id": "Juan Valdemar",
+  "email": "valdemarcolichon@gmail.com",
+  "phone": 987654321,
+  "data_added": "2021-06-04T05:00:00.000+00:00",
+  "start_date": "2021-05-31T05:00:00.000+00:00",
+  "end_date": "2021-06-09T05:00:00.000+00:00"
+}, {
+  "id": 307,
+  "share_key": "ocrates",
+  "bussiness_id": "Socrates",
+  "email": "Socrates@gmail.com",
+  "phone": 987654321,
+  "data_added": "2021-06-04T05:00:00.000+00:00",
+  "start_date": "2021-05-31T05:00:00.000+00:00",
+  "end_date": "2021-06-09T05:00:00.000+00:00"
+}, {
+  "id": 308,
+  "share_key": "ajuan",
+  "bussiness_id": "valdemar juan",
+  "email": "valdemarcolichon@gmail.com",
+  "phone": 987984,
+  "data_added": "2021-06-04T05:00:00.000+00:00",
+  "start_date": "2021-05-30T05:00:00.000+00:00",
+  "end_date": "2021-06-28T05:00:00.000+00:00"
+}, {
+  "id": 309,
+  "share_key": "valdemar",
+  "bussiness_id": "valdemar",
+  "email": "valdemarcolichon@gmail.com",
+  "phone": 987984,
+  "data_added": "2021-06-04T05:00:00.000+00:00",
+  "start_date": "2021-05-30T05:00:00.000+00:00",
+  "end_date": "2021-06-28T05:00:00.000+00:00"
+}, {
+  "id": 310,
+  "share_key": "allantoy",
+  "bussiness_id": "paul llantoy",
+  "email": "valdemarcolichon@gmail.com",
+  "phone": 789,
+  "data_added": "2021-06-04T05:00:00.000+00:00",
+  "start_date": "2021-06-01T05:00:00.000+00:00",
+  "end_date": "2021-07-02T05:00:00.000+00:00"
+}, {
+  "id": 311,
+  "share_key": "l",
+  "bussiness_id": "lds  asdasd",
+  "email": "alex.alata@gmail.com",
+  "phone": 1231233456,
+  "data_added": "2021-06-04T05:00:00.000+00:00",
+  "start_date": "2021-06-05T05:00:00.000+00:00",
+  "end_date": "2021-06-23T05:00:00.000+00:00"
+}]

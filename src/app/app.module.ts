@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { Routes, RouterModule } from '@angular/router';
 
+import { MaterializeModule } from 'angular2-materialize';
 const routes: Routes = [
   { path: '',component:MainComponent},
   { path: 'login', component: MainComponent }, 
@@ -27,6 +28,6 @@ const routes: Routes = [
 
   ],
   providers: [],
-  bootstrap: [AppComponent,MainComponent]
+  bootstrap: [AppComponent,MainComponent],
 })
 export class AppModule { }

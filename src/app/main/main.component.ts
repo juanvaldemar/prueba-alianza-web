@@ -9,21 +9,22 @@ import { Cliente } from '../model/cliente'
   styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit {
-  clientes:Cliente[] = [];
+  clientes: Cliente[] = [];
 
 
-  constructor(private clienteService: ClienteService) { 
+  constructor(private clienteService: ClienteService) {
 
 
   }
 
   ngOnInit(): void {
 
-    this.clienteService.getClientes().subscribe(response =>{
+    this.clienteService.getClientes().subscribe(response => {
       console.log(response);
       this.clientes = response;
     })
 
   }
+
 
 }

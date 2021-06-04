@@ -11,10 +11,12 @@ import { Cliente } from '../model/cliente'
 export class MainComponent implements OnInit {
   clientes: Cliente[] = [];
 
+  users: Cliente;
+
 
   constructor(private clienteService: ClienteService) {
 
-
+    this.users = new Cliente();
   }
 
   ngOnInit(): void {
@@ -24,6 +26,22 @@ export class MainComponent implements OnInit {
       this.clientes = response;
     })
 
+  }
+
+  guardarCliente(): void {
+    // console.log(this.users.bussiness_id);
+    if(this.users.bussiness_id== null && 
+      this.users.phone == null&&
+      this.users.email == null&&
+      this.users.start_date == null&&
+      this.users.end_date == null){
+      alert('Debes completar todos los campos');
+       return;
+     }
+
+    this.clienteService.guardarCLiente(this.users).subscribe(response => {
+      console.log(response);
+    })
   }
 
 

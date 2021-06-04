@@ -5,4 +5,6 @@ export class Cliente {
     email:string;
     phone:number;
     data_added:Date;
+    start_date:Date;
+    end_date:Date;
 }

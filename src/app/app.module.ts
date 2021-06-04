@@ -8,6 +8,10 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { Routes, RouterModule } from '@angular/router';
 
+
+import { FormsModule } from '@angular/forms';
+
+
 import { MaterializeModule } from 'angular2-materialize';
 const routes: Routes = [
   { path: '',component:MainComponent},
@@ -23,6 +27,7 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    FormsModule,
     HttpClientModule,
     RouterModule.forRoot(routes)
 

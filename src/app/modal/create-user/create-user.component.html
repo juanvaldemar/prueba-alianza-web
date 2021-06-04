@@ -1,0 +1,34 @@
+<div class="row">
+    <h2>Registrar nuevo cliente</h2>
+      <form class="col s5 offset-s3 center">
+        <div class="row">
+  
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Nombre de Cliente</label>
+            <input type="text"  [(ngModel)]= "users.bussiness_id" class="form-control"  name="bussiness_id" required>
+          </div>
+  
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Numero de Teléfono</label>
+            <input type="text"  [(ngModel)]= "users.phone" class="form-control" name="phone">
+          </div>
+  
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Correo Electrónico</label>
+            <input type="email"  [(ngModel)]= "users.email" class="form-control" name="email">
+          </div>
+  
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Fecha de registro</label>
+            <input type="date"  [(ngModel)]= "users.start_date" class="form-control"  name="startDate">
+          </div>
+  
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Fecha de salida</label>
+            <input type="date"  [(ngModel)]= "users.end_date" class="form-control"  name="endDate" required>
+          </div>
+          <button type="button" style="width: 100; margin-right: 15px;" class="btn btn-primary"  (click)="guardarCliente()"><i class="las la-save"></i> Registrar</button>
+     
+        </div>
+      </form>
+    </div>

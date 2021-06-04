@@ -13,6 +13,13 @@ import { FormsModule } from '@angular/forms';
 
 
 import { MaterializeModule } from 'angular2-materialize';
+import { CreateUserComponent } from './modal/create-user/create-user.component';
+
+
+import {MatDialogModule} from '@angular/material/dialog';
+
+
+
 const routes: Routes = [
   { path: '',component:MainComponent},
   { path: 'login', component: MainComponent }, 
@@ -22,13 +29,15 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    MainComponent
+    MainComponent,
+    CreateUserComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
+    MatDialogModule,
     RouterModule.forRoot(routes)
 
   ],

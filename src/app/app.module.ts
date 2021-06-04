@@ -27,6 +27,6 @@ const routes: Routes = [
 
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent,MainComponent]
 })
 export class AppModule { }

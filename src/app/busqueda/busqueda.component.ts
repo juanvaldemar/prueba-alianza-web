@@ -27,10 +27,17 @@ export class BusquedaComponent implements OnInit {
   goListado(){
  
     
-    localStorage.setItem("especilidad", this.especialidad_);
+    localStorage.setItem("especialidad", this.especialidad_);
     localStorage.setItem("ubicacion", this.ubicacion_);
+    let a = localStorage.getItem("ubicacion");
+    let b = localStorage.getItem("especialidad");
+    if(a == "" && b == ""){
+      alert("Para continuar debes ingresar un valor")
+    }else{
+    this.router.navigate(['listado']);
 
-    // this.router.navigate(['listado']);
+    }
+
   }
 
 }

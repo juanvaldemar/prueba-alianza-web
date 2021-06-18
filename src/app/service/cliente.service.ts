@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Cliente } from '../model/cliente'
 import { Abogados } from '../model/abogados'
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -28,12 +28,14 @@ export class ClienteService {
   //   return this.http.get<Cliente[]>(urlEndpoint)
   // }
 
-  getAbogados(): Observable<Abogados[]> {
-    const urlEndpoint = 'http://localhost:8080/api/abogado';
-    
-    return this.http.get<Abogados[]>(urlEndpoint)
-  }
+ 
+  getAbogados(ubcacion,especialidad): Observable<any> {
+    let params = new HttpParams().set('ubcacion', ubcacion).set('especialidad', especialidad);
+  
+    return this.http.get<Cliente[]>(`http://localhost:8080/api/abogado/`, { params: params })
+}
 
+ 
 
 
 }

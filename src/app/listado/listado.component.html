@@ -1,9 +1,6 @@
-abogados
-
-
 
 <div class="abogados" *ngFor="let abogado of abogados">
-
+  <br>
   <div class="card mb-12 col-lg-12 bg-dark white container">
     <div class="row no-gutters">
       <div class="col-md-4">
@@ -15,15 +12,15 @@ abogados
             <p class="col-md-3 card-title">Abogado: </p>
             <p class="col-md-9 card-title">{{abogado.nombres}}</p>
             <p class="col-md-3 card-title">Registro CAL: </p>
-            <p class="col-md-9 card-title">77367</p>
+            <p class="col-md-9 card-title">{{abogado.registro_cal}}</p>
             <p class="col-md-3 card-title">Especialidad </p>
-            <p class="col-md-9 card-title">Derecho Civil, Derecho Penal</p>
+            <p class="col-md-9 card-title">{{abogado.especialidad}}</p>
             <p class="col-md-3 card-title">Ubicación: </p>
-            <p class="col-md-9 card-title">San Juan de Lurigancho</p>
+            <p class="col-md-9 card-title">{{abogado.ubicacion}}</p>
             <p class="col-md-3 card-title">Horario de atención: </p>
-            <p class="col-md-9 card-title">Las 24 horas</p>
+            <p class="col-md-9 card-title">{{abogado.horario_atencion}}</p>
             <p class="col-md-3 card-title">Ofrece: </p>
-            <p class="col-md-9 card-title">Consulta gratuita</p>
+            <p class="col-md-9 card-title">{{abogado.ofrece}}</p>
 
             <button class="btn btn-primary col-md-3 card-title"> <i class="fas fa-phone-square-alt"></i> Llamar
             </button>
@@ -37,5 +34,5 @@ abogados
       </div>
     </div>
   </div>
-
+  <br>
 </div>

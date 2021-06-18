@@ -8,12 +8,28 @@ import {Router} from '@angular/router'
 })
 export class BusquedaComponent implements OnInit {
 
+  opcionEspecialidad: string  = '';
+  opcionUbicacion: string  = '';
+  ubicacion_: string = '';
+  especialidad_: string = '';
+
   constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
+  capturar() {
+    console.log(this.opcionEspecialidad);
+    console.log(this.opcionUbicacion);
+    this.especialidad_ = this.opcionEspecialidad;
+    this.ubicacion_ = this.opcionUbicacion;
+  }
   goListado(){
+ 
+    
+    localStorage.setItem("especilidad", this.especialidad_);
+    localStorage.setItem("ubicacion", this.ubicacion_);
+
     // this.router.navigate(['listado']);
   }
 

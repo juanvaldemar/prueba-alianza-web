@@ -11,22 +11,22 @@
                 <h2 class="white">Encuentra un abogado disponible cerca de tí</h2>
 
 
-                <select class="form-select" aria-label="Buscas por ubicación">
+                <select [(ngModel)]="opcionUbicacion" (change)="capturar()"  id="ubicacion" class="form-select" aria-label="Buscas por ubicación" >
                     <option selected>Buscas por ubicación</option>
-                    <option value="1">Lima</option>
-                    <option value="2">Ate</option>
-                    <option value="3">Jesus María</option>
+                    <option value="lima">Lima</option>
+                    <option value="ate">Ate</option>
+                    <option value="miraflores">Miraflores</option>
                 </select>
                 <br>
-                <select class="form-select" aria-label="Buscar por especialidad">
+                <select [(ngModel)]="opcionEspecialidad" (change)="capturar()"  id="especialidad" class="form-select" aria-label="Buscar por especialidad">
                     <option selected>Buscar por especialidad</option>
-                    <option value="1">Civil</option>
-                    <option value="2">Penal</option>
-                    <option value="3">Administrativo</option>
+                    <option value="civil">Civil</option>
+                    <option value="penal">Penal</option>
+                    <option value="alimentos">alimentos</option>
                 </select>
                 <br>
                
-                <button routerLink="/listado" type="button" class="btn btn-primary  mr-2 mb-2"> Buscar</button>
+                <button  n (click)='goListado()' type="button" class="btn btn-primary  mr-2 mb-2"> Buscar</button>
 
                 <br>
 

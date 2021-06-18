@@ -17,11 +17,12 @@ import { CreateUserComponent } from './modal/create-user/create-user.component';
 
 
 import {MatDialogModule} from '@angular/material/dialog';
+import { BusquedaComponent } from './busqueda/busqueda.component';
 
 
 
 const routes: Routes = [
-  { path: '',component:MainComponent},
+  { path: '',component:BusquedaComponent},
   { path: 'login', component: MainComponent }, 
 
 ];
@@ -30,7 +31,8 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     MainComponent,
-    CreateUserComponent
+    CreateUserComponent,
+    BusquedaComponent
   ],
   imports: [
     BrowserModule,

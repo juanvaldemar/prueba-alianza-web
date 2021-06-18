@@ -18,21 +18,22 @@ import { CreateUserComponent } from './modal/create-user/create-user.component';
 
 import {MatDialogModule} from '@angular/material/dialog';
 import { BusquedaComponent } from './busqueda/busqueda.component';
+import { ListadoComponent } from './listado/listado.component';
 
 
 
 const routes: Routes = [
   { path: '',component:BusquedaComponent},
-  { path: 'login', component: MainComponent }, 
+  { path: 'listado', component: ListadoComponent }, 
 
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainComponent,
     CreateUserComponent,
-    BusquedaComponent
+    BusquedaComponent,
+    ListadoComponent
   ],
   imports: [
     BrowserModule,
@@ -44,6 +45,6 @@ const routes: Routes = [
 
   ],
   providers: [],
-  bootstrap: [AppComponent,MainComponent],
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

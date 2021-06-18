@@ -1,28 +1,41 @@
- 
-            <br>
+abogados
 
-        <div class="card mb-12 col-lg-12 bg-dark white container" >
-            <div class="row no-gutters">
-              <div class="col-md-4">
-                <img src="../../assets/img/perfil.jpg" class="card-img" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                    <div class="row">
-                        <p class="col-md-3 card-title" >Abogado: </p> <p class="col-md-9 card-title" >Raúl Calderon Zevallos</p>
-                        <p class="col-md-3 card-title" >Registro CAL: </p> <p class="col-md-9 card-title" >77367</p>
-                        <p class="col-md-3 card-title" >Especialidad </p> <p class="col-md-9 card-title" >Derecho Civil, Derecho Penal</p>
-                        <p class="col-md-3 card-title" >Ubicación: </p> <p class="col-md-9 card-title" >San Juan de Lurigancho</p>
-                        <p class="col-md-3 card-title" >Horario de atención: </p> <p class="col-md-9 card-title" >Las 24 horas</p>
-                        <p class="col-md-3 card-title" >Ofrece: </p> <p class="col-md-9 card-title" >Consulta gratuita</p>
-                       
-                        <button class="btn btn-primary col-md-3 card-title" > <i class="fas fa-phone-square-alt"></i> Llamar </button> 
-                        <button class="btn btn-success col-md-3 card-title" > <i class="fab fa-whatsapp-square"></i> Escribir mensaje</button>
 
-                    </div>
-             
-                  <p class="card-text"><small class="text-muted">Última actualización hace 3 minutos</small></p>
-                </div>
-              </div>
-            </div>
+
+<div class="abogados" *ngFor="let abogado of abogados">
+
+  <div class="card mb-12 col-lg-12 bg-dark white container">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <img src="../../assets/img/perfil.jpg" class="card-img" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <div class="row">
+            <p class="col-md-3 card-title">Abogado: </p>
+            <p class="col-md-9 card-title">{{abogado.nombres}}</p>
+            <p class="col-md-3 card-title">Registro CAL: </p>
+            <p class="col-md-9 card-title">77367</p>
+            <p class="col-md-3 card-title">Especialidad </p>
+            <p class="col-md-9 card-title">Derecho Civil, Derecho Penal</p>
+            <p class="col-md-3 card-title">Ubicación: </p>
+            <p class="col-md-9 card-title">San Juan de Lurigancho</p>
+            <p class="col-md-3 card-title">Horario de atención: </p>
+            <p class="col-md-9 card-title">Las 24 horas</p>
+            <p class="col-md-3 card-title">Ofrece: </p>
+            <p class="col-md-9 card-title">Consulta gratuita</p>
+
+            <button class="btn btn-primary col-md-3 card-title"> <i class="fas fa-phone-square-alt"></i> Llamar
+            </button>
+            <button class="btn btn-success col-md-3 card-title"> <i class="fab fa-whatsapp-square"></i> Escribir
+              mensaje</button>
+
           </div>
+
+          <p class="card-text"><small class="text-muted">Última actualización hace 3 minutos</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

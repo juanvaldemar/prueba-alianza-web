@@ -14,34 +14,8 @@ export class CreateUserComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  constructor(
-    private _clientServices: ClienteService,
-    public dialogRef: MatDialogRef<CreateUserComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: any) {
-      
-
-    this.users = new Cliente();
-    }
+  constructor(){}
     
-
-  onNoClick(): void {
-    this.dialogRef.close();
-  }
-
-  guardarCliente(): void {
-    // console.log(this.users.bussiness_id);
-    if(this.users.bussiness_id== null && 
-      this.users.phone == null&&
-      this.users.email == null&&
-      this.users.start_date == null&&
-      this.users.end_date == null){
-      alert('Debes completar todos los campos');
-       return;
-     }
-
-    this._clientServices.guardarCLiente(this.users).subscribe(response => {
-      console.log(response);
-    })
-  }
+ 
 
 }

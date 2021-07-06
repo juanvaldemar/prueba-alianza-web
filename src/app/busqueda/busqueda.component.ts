@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Router} from '@angular/router'
+import { Router } from '@angular/router'
 
 @Component({
   selector: 'app-busqueda',
@@ -8,8 +8,8 @@ import {Router} from '@angular/router'
 })
 export class BusquedaComponent implements OnInit {
 
-  opcionEspecialidad: string  = '';
-  opcionUbicacion: string  = '';
+  opcionEspecialidad: string = '';
+  opcionUbicacion: string = '';
   ubicacion_: string = '';
   especialidad_: string = '';
 
@@ -24,17 +24,17 @@ export class BusquedaComponent implements OnInit {
     this.especialidad_ = this.opcionEspecialidad;
     this.ubicacion_ = this.opcionUbicacion;
   }
-  goListado(){
- 
-    
+  goListado() {
+
+
     localStorage.setItem("especialidad", this.especialidad_);
     localStorage.setItem("ubicacion", this.ubicacion_);
     let a = localStorage.getItem("ubicacion");
     let b = localStorage.getItem("especialidad");
-    if(a == "" && b == ""){
+    if (a == "" && b == "") {
       alert("Para continuar debes ingresar un valor")
-    }else{
-    this.router.navigate(['listado']);
+    } else {
+      this.router.navigate(['listado']);
 
     }
 

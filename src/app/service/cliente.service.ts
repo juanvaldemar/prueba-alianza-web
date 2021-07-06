@@ -7,6 +7,8 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
+
+ 
 export class ClienteService {
 
   constructor(private http: HttpClient) { }
@@ -29,10 +31,12 @@ export class ClienteService {
   // }
 
  
-  getAbogados(ubcacion,especialidad): Observable<any> {
-    let params = new HttpParams().set('ubcacion', ubcacion).set('especialidad', especialidad);
+ 
+
+  getAbogados(ubicacion,especialidad): Observable<any> {
+    let params = new HttpParams().set('ubicacion', ubicacion).set('especialidad', especialidad);
   
-    return this.http.get<Cliente[]>(`http://localhost:8080/api/abogado/`, { params: params })
+    return this.http.get<Cliente[]>(`https://abogado.azurewebsites.net/api/abogado/`, { params: params })
 }
 
  

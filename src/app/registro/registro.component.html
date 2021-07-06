@@ -1,0 +1,35 @@
+
+<form class="m-t" role="form" action="index.html">
+
+    <div class="form-group">
+        <input [(ngModel)]="abogado.nombres" name="nombres" type="text" class="form-control" placeholder="Usuarios" required="">
+    </div>
+
+    <div class="form-group">
+        <input [(ngModel)]="abogado.registro_cal" name="registro_cal" type="text" class="form-control" placeholder="Registro Cal" required="">
+    </div>
+
+    <div class="form-group">
+        <input [(ngModel)]="abogado.especialidad" name="nombres" type="text" class="form-control" placeholder="Especialidad" required="">
+    </div>
+
+    <div class="form-group">
+        <input [(ngModel)]="abogado.ubicacion" name="registro_cal" type="text" class="form-control" placeholder="Ubicación" required="">
+    </div>
+
+    <div class="form-group">
+        <input [(ngModel)]="abogado.horario_atencion" name="nombres" type="text" class="form-control" placeholder="Horario de Atención" required="">
+    </div>
+
+    <div class="form-group">
+        <input [(ngModel)]="abogado.ofrece" name="registro_cal" type="text" class="form-control" placeholder="Ofrece" required="">
+    </div>
+
+    <div class="form-group">
+        <input [(ngModel)]="abogado.numero" name="registro_cal" type="number" class="form-control" placeholder="Numero" required="">
+    </div>
+
+
+    <button (click)='doSaveAbogados()' type="submit" class="btn btn-primary block full-width m-b">Guardar</button>
+</form>
+

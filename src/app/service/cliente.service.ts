@@ -14,15 +14,15 @@ export class ClienteService {
   constructor(private http: HttpClient) { }
   
 
-  // guardarCLiente(cliente: Cliente): Observable<Cliente> {
-  //   const urlEndpoint = 'http://localhost:8080/api/v1/cliente';
+  guardarAbogados(abogado: Abogados): Observable<Abogados> {
+    const urlEndpoint = 'https://abogado.azurewebsites.net/api/abogado/';
 
-  //   const httpHeaders = new HttpHeaders({
-  //     'Content-Type': 'application/json',
-  //   });
+    const httpHeaders = new HttpHeaders({
+      'Content-Type': 'application/json',
+    });
 
-  //   return this.http.post<Cliente>(urlEndpoint, cliente, { headers: httpHeaders });
-  // }
+    return this.http.post<Abogados>(urlEndpoint, abogado, { headers: httpHeaders });
+  }
 
   // getClientes(): Observable<Cliente[]> {
   //   const urlEndpoint = 'http://localhost:8080/api/v1/cliente';

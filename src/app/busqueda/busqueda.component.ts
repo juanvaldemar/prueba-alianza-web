@@ -39,5 +39,10 @@ export class BusquedaComponent implements OnInit {
     }
 
   }
+  goRegistro() {
 
+    this.router.navigate(['registro']);
+
+
+  }
 }

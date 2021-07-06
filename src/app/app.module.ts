@@ -19,12 +19,14 @@ import { CreateUserComponent } from './modal/create-user/create-user.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import { BusquedaComponent } from './busqueda/busqueda.component';
 import { ListadoComponent } from './listado/listado.component';
+import { RegistroComponent } from './registro/registro.component';
 
 
 
 const routes: Routes = [
   { path: '',component:BusquedaComponent},
   { path: 'listado', component: ListadoComponent }, 
+  { path: 'registro', component: RegistroComponent }, 
 
 ];
 
@@ -33,7 +35,8 @@ const routes: Routes = [
     AppComponent,
     CreateUserComponent,
     BusquedaComponent,
-    ListadoComponent
+    ListadoComponent,
+    RegistroComponent
   ],
   imports: [
     BrowserModule,

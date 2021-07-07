@@ -28,7 +28,7 @@ export class RegistroComponent implements OnInit {
     this.clienteService.guardarAbogados(this.abogado).subscribe((response: any) => {
       this.abogado = response;
       // alert("Success "+ this.abogado)
-      this.router.navigate(['busqueda']);
+      this.router.navigate(['/busqueda']);
         console.log("registro beba")
     })
   }

@@ -20,11 +20,14 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { BusquedaComponent } from './busqueda/busqueda.component';
 import { ListadoComponent } from './listado/listado.component';
 import { RegistroComponent } from './registro/registro.component';
+import { InicioComponent } from './inicio/inicio.component';
 
 
 
 const routes: Routes = [
-  { path: '',component:BusquedaComponent},
+  { path: '',component:InicioComponent},
+  { path: 'inicio',component:InicioComponent},
+  { path: 'busqueda',component:BusquedaComponent},
   { path: 'listado', component: ListadoComponent }, 
   { path: 'registro', component: RegistroComponent }, 
   { path: 'busqueda', component: BusquedaComponent }, 
@@ -37,7 +40,8 @@ const routes: Routes = [
     CreateUserComponent,
     BusquedaComponent,
     ListadoComponent,
-    RegistroComponent
+    RegistroComponent,
+    InicioComponent
   ],
   imports: [
     BrowserModule,

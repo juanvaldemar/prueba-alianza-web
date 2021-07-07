@@ -1,35 +1,63 @@
+<div class="imagen-fondo">
+    <div class="black-transparente">
+        <div class="container text-center">
+            <div class="centro">
 
-<form class="m-t" role="form" action="index.html">
+                <h1 class="white">Registrate ahora</h1> 
 
-    <div class="form-group">
-        <input [(ngModel)]="abogado.nombres" name="nombres" type="text" class="form-control" placeholder="Usuarios" required="">
+                <form class="m-t" role="form" action="index.html">
+                    <select id="ubicacion" class="form-select" aria-label="Elija si es abogado o abogado" >
+                        <option selected value="abogado">Abogado</option>
+                        <option value="abogada">Abogada</option>
+                    </select>
+
+                    <br>
+                    <div class="form-group">
+                        <input [(ngModel)]="abogado.nombres" name="nombres" type="text" class="form-control"
+                            placeholder="Usuarios" required="">
+                    </div>
+                <br>
+
+                    <div class="form-group">
+                        <input [(ngModel)]="abogado.registro_cal" name="registro_cal" type="text" class="form-control"
+                            placeholder="Registro Cal" required="">
+                    </div>
+                <br>
+
+                    <div class="form-group">
+                        <input [(ngModel)]="abogado.especialidad" name="nombres" type="text" class="form-control"
+                            placeholder="Especialidad" required="">
+                    </div>
+                <br>
+
+                    <div class="form-group">
+                        <input [(ngModel)]="abogado.ubicacion" name="registro_cal" type="text" class="form-control"
+                            placeholder="Ubicación" required="">
+                    </div>
+                <br>
+
+                    <div class="form-group">
+                        <input [(ngModel)]="abogado.horario_atencion" name="nombres" type="text" class="form-control"
+                            placeholder="Horario de Atención" required="">
+                    </div>
+                <br>
+
+                    <div class="form-group">
+                        <input [(ngModel)]="abogado.ofrece" name="registro_cal" type="text" class="form-control"
+                            placeholder="Ofrece" required="">
+                    </div>
+                <br>
+
+                    <div class="form-group">
+                        <input [(ngModel)]="abogado.numero" name="registro_cal" type="number" class="form-control"
+                            placeholder="Numero" required="">
+                    </div>
+                    <br>
+
+                    <button   (click)='doSaveAbogados()' type="button" class="btn btn-primary  mr-2 mb-2"> Guardar</button>
+ 
+                </form>
+
+            </div>
+        </div>
     </div>
-
-    <div class="form-group">
-        <input [(ngModel)]="abogado.registro_cal" name="registro_cal" type="text" class="form-control" placeholder="Registro Cal" required="">
-    </div>
-
-    <div class="form-group">
-        <input [(ngModel)]="abogado.especialidad" name="nombres" type="text" class="form-control" placeholder="Especialidad" required="">
-    </div>
-
-    <div class="form-group">
-        <input [(ngModel)]="abogado.ubicacion" name="registro_cal" type="text" class="form-control" placeholder="Ubicación" required="">
-    </div>
-
-    <div class="form-group">
-        <input [(ngModel)]="abogado.horario_atencion" name="nombres" type="text" class="form-control" placeholder="Horario de Atención" required="">
-    </div>
-
-    <div class="form-group">
-        <input [(ngModel)]="abogado.ofrece" name="registro_cal" type="text" class="form-control" placeholder="Ofrece" required="">
-    </div>
-
-    <div class="form-group">
-        <input [(ngModel)]="abogado.numero" name="registro_cal" type="number" class="form-control" placeholder="Numero" required="">
-    </div>
-
-
-    <button (click)='doSaveAbogados()' type="submit" class="btn btn-primary block full-width m-b">Guardar</button>
-</form>
-

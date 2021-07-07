@@ -27,6 +27,7 @@ const routes: Routes = [
   { path: '',component:BusquedaComponent},
   { path: 'listado', component: ListadoComponent }, 
   { path: 'registro', component: RegistroComponent }, 
+  { path: 'busqueda', component: BusquedaComponent }, 
 
 ];
 

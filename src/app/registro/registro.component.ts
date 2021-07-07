@@ -24,10 +24,11 @@ export class RegistroComponent implements OnInit {
   }
 
   doSaveAbogados(){
+    this.abogado.id = Math.floor(Math.random() * (0 - 100000)) + 100000;
     this.clienteService.guardarAbogados(this.abogado).subscribe((response: any) => {
       this.abogado = response;
       // alert("Success "+ this.abogado)
-    this.router.navigate(['/registro']);
+      this.router.navigate(['busqueda']);
         console.log("registro beba")
     })
   }

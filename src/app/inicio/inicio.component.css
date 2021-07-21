@@ -1,0 +1,12 @@
+.imagen-fondo{
+
+    background-image: url("../../assets/img/deskweb.png");
+    background-size:cover;
+    height: 89%;
+    width: 100% !important;
+
+}
+
+.white{
+    color: white;
+}

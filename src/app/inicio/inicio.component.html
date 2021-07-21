@@ -1,30 +1,74 @@
+<style>
+  .izquierda {
+    margin-left: 3em;
+  }
 
+  .pegar-izquierdad {
+    float: left;
+  }
 
-<div class="container">
-    <br><br><br><br>
+  .center {
+    text-align: center;
+  }
 
-    <span class="h1">Bienvenido</span>
+  .botones-ingresar {
+    border-style: solid;
+    width: 30em;
+    border-color: white;
+    display: inline-block;
+    border-radius: 1%;
+  }
+</style>
 
- <br><br><br><br>
-    <div class="container center">
-        <div class="row">
-          <div class="col-sm center">.
-            <span class="h4">¿Necesitas asesoría legal?</span>
-          <br>
-          <br>
-          <button class="btn btn-dark" style="padding: 4em;" routerLink="/busqueda">Click aquí y encuentra un abogado disponible para tí.</button>
+<div class="imagen-fondo">
+  <br><br>
+  <div class="izquierda">
+    <span class="h1 white ">Registrate ahora.</span>
+    <br>
+    <span class="h6 white ">y forma una comunidad de información jurídica.</span>
 
-          </div>
-          <div class="col-sm">
-            <span class="h4" >¿Eres abogado o estudiando de derecho?</span>
-            <br>
-            <br>
+  </div>
 
-            <button class="btn btn-dark" style="padding: 4em;" routerLink="/informacion-juridica">Haz click aquí a la comunidad de información jurídica.</button>
-          </div>
-        </div>
+  <div class="normativa center">
+    <br>
+
+    <img src="assets/img/icono_normativa.png" height="100" class="d-inline-block center" routerLink="">
+    <br>
+    <br>
+    <p class="white 50"><b>Normativa</b>, la constitución, códigos y demás normas actualizadas diariamente.</p>
+    <br>
+    <br>
+
+    <div class="legalic">
+      <div class="botones-ingresar">
+        <img src="assets/img/icono_normativa.png" height="40" class="d-inline-block " routerLink="">
+        <p class="d-inline-block white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Crea una nueva
+          cuenta</p>
       </div>
-   
+
+    </div>
+    <br>
+
+    <div class="gmail">
+      <div class="botones-ingresar">
+
+        <img src="assets/img/icono_google.png" height="40" class="d-inline-block " routerLink="">
+        <p class="d-inline-block white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inicia
+          sesión con Gmail</p>
+      </div>
+    </div>
+
+    <br>
+    <div class="botones-ingresar">
+
+      <div class="facebook">
+        <img src="assets/img/icono_facebook.png" height="40" class="d-inline-block " routerLink="">
+        <p class="d-inline-block white">&nbsp;&nbsp;&nbsp;&nbsp;Inicia sesión con Facebook</p>
+      </div>
+    </div>
+
+  </div>
+
+  <br><br><br><br>
 
 </div>
-

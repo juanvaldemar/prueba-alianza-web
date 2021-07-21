@@ -23,6 +23,7 @@ import { RegistroComponent } from './registro/registro.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { InformacionJuridicaComponent } from './informacion-juridica/informacion-juridica.component';
 import { JurisprudenciaComponent } from './jurisprudencia/jurisprudencia.component';
+import { NormativaComponent } from './normativa/normativa.component';
 
 
 
@@ -34,6 +35,7 @@ const routes: Routes = [
   { path: 'listado', component: ListadoComponent }, 
   { path: 'registro', component: RegistroComponent }, 
   { path: 'jurisprudencia', component: JurisprudenciaComponent }, 
+  { path: 'normativa', component: NormativaComponent }, 
 
 ];
 
@@ -46,7 +48,8 @@ const routes: Routes = [
     RegistroComponent,
     InicioComponent,
     InformacionJuridicaComponent,
-    JurisprudenciaComponent
+    JurisprudenciaComponent,
+    NormativaComponent
   ],
   imports: [
     BrowserModule,

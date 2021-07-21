@@ -21,6 +21,8 @@ import { BusquedaComponent } from './busqueda/busqueda.component';
 import { ListadoComponent } from './listado/listado.component';
 import { RegistroComponent } from './registro/registro.component';
 import { InicioComponent } from './inicio/inicio.component';
+import { InformacionJuridicaComponent } from './informacion-juridica/informacion-juridica.component';
+import { JurisprudenciaComponent } from './jurisprudencia/jurisprudencia.component';
 
 
 
@@ -28,9 +30,10 @@ const routes: Routes = [
   { path: '',component:InicioComponent},
   { path: 'inicio',component:InicioComponent},
   { path: 'busqueda',component:BusquedaComponent},
+  { path: 'informacion-juridica',component:InformacionJuridicaComponent},
   { path: 'listado', component: ListadoComponent }, 
   { path: 'registro', component: RegistroComponent }, 
-  { path: 'busqueda', component: BusquedaComponent }, 
+  { path: 'jurisprudencia', component: JurisprudenciaComponent }, 
 
 ];
 
@@ -41,7 +44,9 @@ const routes: Routes = [
     BusquedaComponent,
     ListadoComponent,
     RegistroComponent,
-    InicioComponent
+    InicioComponent,
+    InformacionJuridicaComponent,
+    JurisprudenciaComponent
   ],
   imports: [
     BrowserModule,

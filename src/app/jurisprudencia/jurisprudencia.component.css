@@ -1,0 +1,25 @@
+.black-transparente{
+    background-color: black;
+    opacity: 0.6;
+    height: 100%;
+
+}
+
+
+.imagen-fondo{
+
+    background-image: url("../../assets/img/deskweb.png");
+    background-size:cover;
+    height: 89%;
+
+}
+
+.centro{
+    width: 50%;
+    display: inline-block;
+}
+
+
+.white{
+    color: white !important;
+}

@@ -1,0 +1,32 @@
+.imagen-fondo{
+
+  background-image: url("../../assets/img/deskweb.png");
+  background-size:cover;
+  height: 89%;
+  width: 100% !important;
+
+}
+
+.white{
+  color: white;
+}
+
+.izquierda {
+  margin-left: 3em;
+}
+
+.pegar-izquierdad {
+  float: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.botones-ingresar {
+  border-style: solid;
+  width: 30em;
+  border-color: white;
+  display: inline-block;
+  border-radius: 1%;
+}

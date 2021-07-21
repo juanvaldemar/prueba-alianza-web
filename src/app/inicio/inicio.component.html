@@ -1,74 +1,55 @@
-<style>
-  .izquierda {
-    margin-left: 3em;
-  }
-
-  .pegar-izquierdad {
-    float: left;
-  }
-
-  .center {
-    text-align: center;
-  }
-
-  .botones-ingresar {
-    border-style: solid;
-    width: 30em;
-    border-color: white;
-    display: inline-block;
-    border-radius: 1%;
-  }
-</style>
-
+ 
 <div class="imagen-fondo">
   <br><br>
-  <div class="izquierda">
-    <span class="h1 white ">Registrate ahora.</span>
-    <br>
-    <span class="h6 white ">y forma una comunidad de información jurídica.</span>
-
-  </div>
+ 
 
   <div class="normativa center">
     <br>
 
-    <img src="assets/img/icono_normativa.png" height="100" class="d-inline-block center" routerLink="">
+    <!-- <img src="assets/img/logo_toolbar.png" height="100" class="d-inline-block center" routerLink="">
+    <br> -->
+    <br>
+    <p class="h1 white 50">Comunidad jurídica.</p>
     <br>
     <br>
-    <p class="white 50"><b>Normativa</b>, la constitución, códigos y demás normas actualizadas diariamente.</p>
-    <br>
-    <br>
-
-    <div class="legalic">
-      <div class="botones-ingresar">
-        <img src="assets/img/icono_normativa.png" height="40" class="d-inline-block " routerLink="">
-        <p class="d-inline-block white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Crea una nueva
-          cuenta</p>
-      </div>
-
-    </div>
-    <br>
-
-    <div class="gmail">
-      <div class="botones-ingresar">
-
-        <img src="assets/img/icono_google.png" height="40" class="d-inline-block " routerLink="">
-        <p class="d-inline-block white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inicia
-          sesión con Gmail</p>
-      </div>
-    </div>
-
-    <br>
-    <div class="botones-ingresar">
-
-      <div class="facebook">
-        <img src="assets/img/icono_facebook.png" height="40" class="d-inline-block " routerLink="">
-        <p class="d-inline-block white">&nbsp;&nbsp;&nbsp;&nbsp;Inicia sesión con Facebook</p>
-      </div>
-    </div>
+ 
+ 
 
   </div>
 
-  <br><br><br><br>
+  <div class="row center">
+    <div class="col-sm-6">
+      <span class="h4 white">¿Necesitas asesoría legal?</span>
+        <br>
+        <br>
+
+      <div class="d-inline-block botones-ingresar" routerLink="/busqueda">
+        <br>
+        <div class="centro">
+          <p class="d-inline-block white">Haz click aquí y encuentra un abogado disponible cerca a tí.</p>
+
+          <img src="assets/img/icono_buscar_abogado.png" height="150" class="d-inline-block " routerLink="">
+        </div>
+      </div>
+    </div> 
+   
+
+    <div class="col-sm-6">
+      <span class="h4 white">¿Necesitas asesoría legal?</span>
+        <br>
+        <br>
+
+      <div class="d-inline-block botones-ingresar" routerLink="/informacion-juridica">
+        <br>
+        <div class="centro">
+          <p class="d-inline-block white">Haz click aquí y encuentra un abogado disponible cerca a tí.</p>
+
+          <img src="assets/img/icono_buscar_abogado.png" height="150" class="d-inline-block " routerLink="">
+        </div>
+      </div>
+    </div> 
+
+ 
+  </div>
 
 </div>

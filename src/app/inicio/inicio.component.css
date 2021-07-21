@@ -10,3 +10,23 @@
 .white{
     color: white;
 }
+
+.izquierda {
+    margin-left: 3em;
+  }
+
+  .pegar-izquierdad {
+    float: left;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .botones-ingresar {
+    border-style: solid;
+    width: 30em;
+    border-color: white;
+    display: inline-block;
+    border-radius: 1%;
+  }

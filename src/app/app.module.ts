@@ -24,6 +24,7 @@ import { InicioComponent } from './inicio/inicio.component';
 import { InformacionJuridicaComponent } from './informacion-juridica/informacion-juridica.component';
 import { JurisprudenciaComponent } from './jurisprudencia/jurisprudencia.component';
 import { NormativaComponent } from './normativa/normativa.component';
+import { InfoJuriComponent } from './info-juri/info-juri.component';
 
 
 
@@ -49,7 +50,8 @@ const routes: Routes = [
     InicioComponent,
     InformacionJuridicaComponent,
     JurisprudenciaComponent,
-    NormativaComponent
+    NormativaComponent,
+    InfoJuriComponent
   ],
   imports: [
     BrowserModule,

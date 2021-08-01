@@ -1,4 +1,15 @@
+<style>
+    select,.asd {
+        color: #ffffff;
+        background-color: #ffffff5e;
+        padding: .8em;
+    }
 
+    .asd::placeholder{
+        color: #ffffff;
+
+    }
+</style>
 <div class="imagen-fondo">
 
     <div class="container center">
@@ -10,7 +21,7 @@
         <div class=" d-inline-block ">
             <p class="h5 white padding-lados" routerLink="/jurisprudencia">Jurisprudencia</p>
         </div>
-        <div class="d-inline-block"> - </div> 
+        <div class="d-inline-block"> - </div>
 
         <div class=" d-inline-block ">
             <p class="h5 white-gris padding-lados">Publicaciones</p>
@@ -44,41 +55,46 @@
 
                 <br>
                 <br>
-                <h2 class="white">Jurisprudencia</h2>
+                <!-- <h2 class="white">Jurisprudencia</h2> -->
 
                 <br>
-                <select   id="especialidad" class="form-select" aria-label="Buscar por especialidad">
-                    <option selected>Buscar por especialidad</option>
-                    <option value="civil">Civil</option>
+                <label style="text-align: left !important; color: white; width: 100%; font-size: 1.2em; margin-bottom: .3em;">Especialidad</label>
+                <select id="especialidad" class="form-select" aria-label="Buscar por especialidad" >
+                    <option selected>Seleccione especialidad(p. ej. Civil)</option>
+                    <option value=" civil">Civil</option>
                     <option value="penal">Penal</option>
                     <option value="alimentos">Alimentos</option>
                     <option value="alimentos">Laboral</option>
                 </select>
-           
+
                 <br>
                 <br>
+                <label style="text-align: left !important; color: white; width: 100%; font-size: 1.2em; margin-bottom: .3em;">Pretensión/Delito</label>
 
                 <div class="input-group mb-3">
-                    <div class="input-group-prepend">
+                    <!-- <div class="input-group-prepend">
                         <span class="input-group-text" id="inputGroup-sizing-default">Pretensión / Delito</span>
-                    </div>
-                    <input type="text" class="form-control" aria-label="Default"
+                    </div> -->
+                    <input type="text" class="form-control asd" placeholder="Ingrese pretensión/delito (p. ej. Homocidio)"  aria-label="Default"
                         aria-describedby="inputGroup-sizing-default">
                 </div>
                 <br>
+                <label style="text-align: left !important; color: white; width: 100%; font-size: 1.2em; margin-bottom: .3em;">Palabras clave</label>
+
                 <div class="input-group mb-3">
-                    <div class="input-group-prepend">
+                    <!-- <div class="input-group-prepend">
                         <span class="input-group-text" id="inputGroup-sizing-default">Palabras claves</span>
-                    </div>
-                    <input type="text" class="form-control" aria-label="Default"
+                    </div> -->
+                    <input type="text" class="form-control asd" placeholder="Ingrese palabra clave (p. ej. acuerdo plenario)" aria-label="Default"
                         aria-describedby="inputGroup-sizing-default">
                 </div>
 
                 <br>
-                <button   (click)='goListado()' type="button" class="btn btn-danger  mr-2 mb-2"> Buscar</button>
+                <button (click)='goListado()' type="button" class="btn btn-dark  mr-2 mb-2" style="width: 10em; padding: 1em;
+                border: 1px solid #fff;"> Buscar</button>
 
                 <br>
- 
+
 
                 <br>
 

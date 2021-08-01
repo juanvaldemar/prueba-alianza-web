@@ -1,33 +1,58 @@
 
 <div class="imagen-fondo">
+<br><br><br>
+        <h1 class=" white " style="margin-left: 1.7em; font-size: 3em;" >Tenemos los mejores abogados para tí.</h1>
+        <h1 class=" white " style="margin-left: 3em;">Aquí encontrarás la asesoria legal <br> que necesitas.</h1>
+    
+      
     <div class="black-transparente">
         <div class="container text-center">
             <div class="centro">
 
                 <br>
 
-                <h1 class="white">¿Necesitas asesoría legal?</h1>
+                <!-- <h1 class="white">¿Necesitas asesoría legal?</h1>
                 <br>
-                <h2 class="white">Encuentra un abogado disponible cerca de tí</h2>
+                <h2 class="white">Encuentra un abogado disponible cerca de tí</h2> -->
 
 
-                <select [(ngModel)]="opcionUbicacion" (change)="capturar()"  id="ubicacion" class="form-select" aria-label="Buscas por ubicación" >
+                <!-- <select [(ngModel)]="opcionUbicacion" (change)="capturar()"  id="ubicacion" class="form-select" aria-label="Buscas por ubicación" >
                     <option selected >Buscas por ubicación</option>
                     <option value="lima">Lima</option>
                     <option value="ate">Ate</option>
                     <option value="miraflores">Miraflores</option>
                 </select>
+                <br> -->
+
+                <select  id="ubicacion" class="form-select" aria-label="Buscas por ubicación" >
+                    <option selected >Buscas por ubicación (p. ej. Lima, Ayacucho, Miraflores)</option>
+                    <option value="lima">Lima</option>
+                    <option value="ate">Ate</option>
+                    <option value="miraflores">Miraflores</option>
+                    <option value="miraflores">Jesus María</option>
+                </select>
                 <br>
+
+                <select id="especialidad" class="form-select" aria-label="Buscar por especialidad">
+                    <option selected>Buscar por especialidad(p. ej. Familia, Penal, Migraciones)</option>
+                    <option value="civil">Civil</option>
+                    <option value="penal">Penal</option>
+                    <option value="alimentos">Alimentos</option>
+                </select>
+                <br>
+               
+<!--                 
                 <select [(ngModel)]="opcionEspecialidad" (change)="capturar()"  id="especialidad" class="form-select" aria-label="Buscar por especialidad">
                     <option selected>Buscar por especialidad</option>
                     <option value="civil">Civil</option>
                     <option value="penal">Penal</option>
                     <option value="alimentos">alimentos</option>
                 </select>
-                <br>
+                <br> -->
                
                 <button   (click)='goListado()' type="button" class="btn btn-primary  mr-2 mb-2"> Buscar</button>
 
+                <br>
                 <br>
 
                 <p class="white">Si eres abogado(a) y deseas registrate <b (click)='goRegistro()'>Haz click aquí</b></p>

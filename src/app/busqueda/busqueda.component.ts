@@ -31,8 +31,8 @@ export class BusquedaComponent implements OnInit {
     localStorage.setItem("ubicacion", this.ubicacion_);
     let a = localStorage.getItem("ubicacion");
     let b = localStorage.getItem("especialidad");
-    if (a == "" && b == "") {
-      alert("Para continuar debes ingresar un valor")
+    if (a == "") {
+      alert("Para continuar debe ingresar una ubicación")
     } else {
       this.router.navigate(['listado']);
 

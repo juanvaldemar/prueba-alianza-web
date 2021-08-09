@@ -6,15 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./jurisprudencia.component.css']
 })
 export class JurisprudenciaComponent implements OnInit {
-
+  condition: Boolean;
+  condition1: Boolean;
   constructor() { }
 
   ngOnInit(): void {
+    this.condition = false;
+    this.condition1 = true;
   }
 
 
   goListado():void {
-    alert("Servidor no disponible en este momento")
+    this.condition = true;
+    this.condition1 = false;
+    // alert("Servidor no disponible en este momento")
   }
 
 }

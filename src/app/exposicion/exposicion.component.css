@@ -48,3 +48,9 @@
   padding-bottom: 2em;
   padding-top: 2em;
 }
+a {
+  display: inline-block;
+  padding: 1em;
+  background: #6e6e6e;
+  margin-right: 1em;
+}

@@ -32,11 +32,18 @@ export class BusquedaComponent implements OnInit {
     let a = localStorage.getItem("ubicacion");
     let b = localStorage.getItem("especialidad");
     if (a == "") {
-      alert("Para continuar debe ingresar una ubicación")
+      // alert("Para continuar debe ingresar una ubicación")
+      alert("Error al cargar")
     } else {
       this.router.navigate(['listado']);
 
     }
+
+    console.log("Listando abogados...")
+    console.log("Raúl Morales...")
+    console.log("José Figueroa...")
+    console.log("Manuel Cusihuaman...")
+    console.log("Celeste Flores...")
 
   }
   goRegistro() {

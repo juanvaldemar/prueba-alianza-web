@@ -3,7 +3,7 @@ import { ClienteService } from '../service/cliente.service'
 import { Cliente } from '../model/cliente'
 import { MatDialog } from '@angular/material/dialog';
 import { CreateUserComponent } from '../modal/create-user/create-user.component';
-import { ExportToCsv } from 'export-to-csv';
+// import { ExportToCsv } from 'export-to-csv';
 
 
 @Component({

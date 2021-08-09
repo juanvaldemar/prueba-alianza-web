@@ -122,5 +122,8 @@
       }
     }
   },
-  "defaultProject": "ng-prueba-alianza"
+  "defaultProject": "ng-prueba-alianza",
+  "cli": {
+    "analytics": false
+  }
 }

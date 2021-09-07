@@ -18,38 +18,64 @@
 
                 <h1 class="white">Registrate ahora</h1>
 
+ 
+ 
+
+<div class="form-group">
+    <input [(ngModel)]="abogado.especialidad" name="nombres" type="text" class="form-control asd"
+        placeholder="Ingrese especialidad" required="">
+</div>
+<br>
+<div class="form-group">
+    <input [(ngModel)]="abogado.nombres" name="nombres" type="text" class="form-control asd"
+        placeholder="Ingrese su nombre" required="">
+</div>
+<br>
+
+<div class="form-group">
+    <input [(ngModel)]="abogado.numero" name="nombres" type="number" class="form-control asd"
+        placeholder="Ingrese su número de celular de contacto para sus servicios" required="">
+</div>
+<br>   
+<div class="form-group">
+    <input [(ngModel)]="abogado.ofrece" name="nombres" type="text" class="form-control asd"
+        placeholder="Ingrese lo que ofrece" required="">
+</div>
+<br>
+<div class="form-group">
+    <input [(ngModel)]="abogado.registro_cal" name="registro_cal" type="text" class="form-control asd"
+        placeholder="Ingrese sus registro_cal" required="">
+</div>
+<br>
+
                 <form class="m-t" role="form" action="index.html">
-                    <select id="ubicacion" class="form-select" aria-label="Elija si es abogado o abogado">
+                    <select class="form-select" aria-label="Elija si es abogado o abogado">
                         <option selected value="abogado">Abogado</option>
                         <option value="abogada">Abogada</option>
                     </select>
 
                     <br>
-                    <div class="form-group">
-                        <input [(ngModel)]="abogado.nombres" name="nombres" type="text" class="form-control asd"
-                            placeholder="Ingrese su nombre" required="">
-                    </div>
-                    <br>
+                
 
-                    <div class="form-group">
-                        <input [(ngModel)]="abogado.registro_cal" name="registro_cal" type="text" class="form-control asd"
-                            placeholder="Ingrese sus apellidos" required="">
-                    </div>
-                    <br>
+                   
 
-                    <select id="ubicacion" class="form-select" aria-label="Elija el Colegio de Abogado al que pertenece">
+                    <select class="form-select" aria-label="Elija el Colegio de Abogado al que pertenece">
                         <option selected value="abogado">Colegio Lima</option>
                         <option value="abogada">Colegio Ica</option>
                     </select>
 
 <br>
-                    <div class="form-group">
-                        <input [(ngModel)]="abogado.especialidad" name="nombres" type="text" class="form-control asd"
-                            placeholder="Ingrese el N° de su colegiatura" required="">
-                    </div>
-                    <br>
 
-                    <select id="ubicacion" class="form-select" aria-label="Elija el Departamento donde brinda sus servicios">
+             
+
+
+                    <!-- <div class="form-group">
+                        <input [(ngModel)]="abogado.refistro" name="nombres" type="text" value="2021-09-07T00:45:27.574Z" class="form-control asd"
+                            placeholder="Ingrese lo que registro" required="">
+                    </div>
+                    <br> -->
+
+                    <select class="form-select" aria-label="Elija el Departamento donde brinda sus servicios">
                         <option selected value="lima">Lima</option>
                         <option value="lima">Ica</option>
                         <option value="lima">Junín</option>
@@ -57,14 +83,14 @@
                     <br>
 
                  
-                    <select id="ubicacion" class="form-select" aria-label="Elija la Provincia donde brinda sus servicios">
+                    <select class="form-select" aria-label="Elija la Provincia donde brinda sus servicios">
                         <option selected value="lima">Lima</option>
                         <option value="lima">Ica</option>
                         <option value="lima">Junín</option>
                     </select>
                     <br>
 
-                    <select id="ubicacion" class="form-select" aria-label="Elija el Distrito donde brinda sus servicios">
+                    <select class="form-select" aria-label="Elija el Distrito donde brinda sus servicios">
                         <option selected value="lima">Lima</option>
                         <option value="lima">Ica</option>
                         <option value="lima">Junín</option>
@@ -72,26 +98,27 @@
                     <br>
 
                     <div class="form-group">
-                        <input [(ngModel)]="abogado.horario_atencion" name="nombres" type="text" class="form-control asd"
+                        <input [(ngModel)]="abogado.ubicacion" name="nombres" type="text" class="form-control asd"
                             placeholder="Ingrese la dirección de su oficina" required="">
                     </div>
                     <br>
 
+                    
                     <div class="form-group">
                         <input [(ngModel)]="abogado.horario_atencion" name="nombres" type="text" class="form-control asd"
-                            placeholder="Ingrese su número de celular de contacto para sus servicios" required="">
+                            placeholder="Ingrese su horario de atención" required="">
                     </div>
                     <br>
 
                     <div class="form-group">
-                        <input [(ngModel)]="abogado.horario_atencion" name="nombres" type="text" class="form-control asd"
+                        <input   name="nombres" type="text" class="form-control asd"
                             placeholder="Ingrese su número fijo de contacto para sus servicios" required="">
                     </div>
                     <br>
 
 
                     <div class="form-group">
-                        <input [(ngModel)]="abogado.horario_atencion" name="nombres" type="text" class="form-control asd"
+                        <input  name="nombres" type="text" class="form-control asd"
                             placeholder="Ingrese su correo electrónico" required="">
                     </div>
                     <br>

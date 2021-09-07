@@ -7,5 +7,5 @@ export class Abogados {
     horario_atencion:string;
     ofrece:string;
     numero:number;
-    refistro:Date;
+    refistro:Date = new Date;
 }

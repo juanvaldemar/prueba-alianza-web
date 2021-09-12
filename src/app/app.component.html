@@ -12,27 +12,48 @@
         padding-left: 3em;
         width: 16em;
     }
+
+
+    
+  .botones-ingresar {
+    border: 2px solid white;
+    background: #ddd0;
+    color: white;
+    border-radius: 13px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .botones-ingresar1 {
+    border: 2px solid rgb(100, 100, 100);
+    background: #ddd0;
+    color: rgb(100, 100, 100);
+    border-radius: 13px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 </style>
 <div class="text-center" style="background-color: black;">
     <br>
 
-    <img src="assets/img/logo_toolbar.png" height="60" class="d-inline-block align-text-top izquierda" routerLink="">
+    <img src="assets/img/logo_toolbar.png" height="80" class="d-inline-block align-text-top izquierda" routerLink="">
 
     <div class="derecha">
         <br>
-        <p class="d-inline-block white">Si ya tienes usuario</p>&nbsp;&nbsp;
-        <button type="button" class="d-inline-block btn btn-dark">Suscribete</button>&nbsp;&nbsp;
+        <!-- <p class="d-inline-block white">Si ya tienes usuario</p>&nbsp;&nbsp; -->
+        <button type="button" class="botones-ingresar">Registrate GRATIS</button>&nbsp;&nbsp;
         <p class="d-inline-block white">ó</p>&nbsp;&nbsp;
-        <button type="button" class=" d-inline-block btn btn-dark">Inicia Sesión</button>
-        <div class="d-inline-block" style="color: black;"> - </div>
-        <div class="d-inline-block" style="color: black;"> - </div>
+        <button type="button" class=" botones-ingresar1">Inicia Sesión</button>
+        <!-- <div class="d-inline-block" style="color: black;"> - </div> -->
+        <!-- <div class="d-inline-block" style="color: black;"> - </div>
         <div class="d-inline-block" style="color: black;"> - </div>
         <div class="d-inline-block" style="color: black;"> - </div>
         <div class="d-inline-block" style="color: black;"> - </div>
         <select class="form-select d-inline-block btn btn-dark " style="width: 8em;" data-width="fit">
-          <option class=""><img style="" height="10px" alt=""> Español</option>
-            <option data-content='asdsad'>English</option>
-        </select>
+          <option class=""><img style="" height="15px" alt=""> Español</option>
+            <option data-content='asdsad'>frances</option>
+        </select> -->
 
         <br>
 
@@ -43,10 +64,23 @@
 
     <br>
     <br>
-    <p class="white align-text-top izquierda">Comunidad de información jurídica.</p>
+        <!-- <p class="white align-text-top izquierda">Comunidad de información jurídica.</p> -->
+    <br>
+    <br>
 
-    <br>
-    <br>
+    <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "75aa52fa-0570-4f50-be07-6727d9474e61", // The ID of this integration.
+            region: "us-south", // The region your integration is hosted in.
+            serviceInstanceID: "62590563-f7f0-4f7f-ac33-8024e52df7ba", // The ID of your service instance.
+            onLoad: function(instance) { instance.render(); }
+          };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js"
+          document.head.appendChild(t);
+        });
+      </script>
 
 </div>
 <router-outlet></router-outlet>

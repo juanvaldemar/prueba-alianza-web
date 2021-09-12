@@ -24,7 +24,7 @@
   }
 
   .botones-ingresar {
-    border-style: solid;
+    border: 2px solid white;
     width: 30em;
     border-color: white;
     display: inline-block;

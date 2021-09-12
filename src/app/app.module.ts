@@ -28,6 +28,8 @@ import { InfoJuriComponent } from './info-juri/info-juri.component';
 import { ExposicionComponent } from './exposicion/exposicion.component';
 import { CodigoPenalComponent } from './codigo/codigo-penal/codigo-penal.component';
 import { CodigoCivilComponent } from './codigo/codigo-civil/codigo-civil.component';
+import { PerfilComponent } from './perfil/perfil.component';
+import { PenalComponent } from './normativa/codigos/penal/penal.component';
 
 
 
@@ -43,6 +45,7 @@ const routes: Routes = [
   { path: 'exposicion', component: ExposicionComponent }, 
   { path: 'penal', component: CodigoPenalComponent }, 
   { path: 'civil', component: CodigoCivilComponent }, 
+  { path: 'perfil', component: PerfilComponent }, 
 
 ];
 
@@ -60,7 +63,9 @@ const routes: Routes = [
     InfoJuriComponent,
     ExposicionComponent,
     CodigoPenalComponent,
-    CodigoCivilComponent
+    CodigoCivilComponent,
+    PerfilComponent,
+    PenalComponent
   ],
   imports: [
     BrowserModule,

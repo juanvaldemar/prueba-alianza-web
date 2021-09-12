@@ -43,7 +43,7 @@ const routes: Routes = [
   { path: 'jurisprudencia', component: JurisprudenciaComponent }, 
   { path: 'normativa', component: NormativaComponent }, 
   { path: 'exposicion', component: ExposicionComponent }, 
-  { path: 'penal', component: CodigoPenalComponent }, 
+  { path: 'exposicion/penal', component: PenalComponent }, 
   { path: 'civil', component: CodigoCivilComponent }, 
   { path: 'perfil', component: PerfilComponent }, 
 

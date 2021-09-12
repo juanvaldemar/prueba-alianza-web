@@ -1,0 +1,111 @@
+body{
+	/*padding: 10%;*/
+	      padding: 1% 1%;
+	          text-align: justify !important;
+
+}
+.corte{
+	text-align: center;
+	color: green
+}
+.tema_principal{
+	color:  red;
+	text-align: center;
+}
+h2.titulo{
+	text-align: center;
+	color: #D9C10A;
+}
+
+.sub {
+	color:  #D9C10A;
+}
+.cuerpo {
+	font-weight: bold;
+}
+.sangria{
+	margin-left: 30px;
+	color: red;
+	
+}
+strong.color{
+	color: #D9C10A;
+}
+.sangri{
+	color: red;
+	
+}
+.sang{
+	text-indent: 30px;
+	
+}
+
+/*
+.articulo{
+
+}
+.articulo:before{
+	content: "Articulo1 .-";
+	font-weight: bold;
+	color: red;
+
+};*/
+
+
+h2.RAULAGRANDARH2  {
+font-size: 100px !important;
+color: #2f5496;
+}
+/*recursos de colores*/
+
+
+.colorblack {
+		color:#2f5496 !important;  
+}
+
+p.Especial {
+    padding: .3em 0.5em;
+    display: inline-block;
+    color: white;
+    background: black;
+}
+
+
+mark {
+  background: yellow;
+}
+
+mark.current {
+  background: orange;
+}
+
+.header {
+  padding: 10px;
+  width: 100%;
+  background: #eee;
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+}
+
+.content {
+  margin-top: 50px;
+}
+button{
+	font-size: 1.5em;
+  margin-right: .2em;
+}
+
+.buscar-tm{
+  margin-left: .5em;
+  font-size: 1.5em;
+  margin-top: .1em; 
+ 
+}
+
+.input-search{
+   width: 38%; 
+    margin-bottom: .5em;
+    font-size: 1em;
+ }

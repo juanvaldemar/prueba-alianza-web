@@ -1,0 +1,87 @@
+.centrado{
+	text-align: center;
+}
+.titulo-color-plata{
+	color: #2F5496;
+}
+.publicado{
+	text-align: left;
+	margin: 22px;
+	font: 100% sans-serif;
+}
+.justificado{
+	text-align: justify;
+	font: 100% sans-serif;
+}
+.margenes-laterales{
+	margin: 1em 3em;
+	text-align: justify;
+	font: 100% sans-serif;
+
+}
+.indent{ 
+	padding-left: 1.4em;
+	text-align: justify;
+	font: 100% sans-serif;
+
+}
+.text-indent{
+	text-indent: 2em;
+	text-align: justify;
+	font: 100% sans-serif;
+
+}
+.min_indent{
+	padding-left: 2.8em;
+	text-align: justify;
+	font: 100% sans-serif;
+}
+
+
+
+p.Especial {
+    padding: .3em 0.5em;
+    display: inline-block;
+    color: white;
+    background: black;
+}
+
+
+mark {
+  background: yellow;
+}
+
+mark.current {
+  background: orange;
+}
+
+.header {
+  padding: 10px;
+  width: 100%;
+  background: #eee;
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+}
+
+.content {
+  margin-top: 50px;
+}
+button{
+	font-size: 1.5em;
+  margin-right: .2em;
+}
+
+.buscar-tm{
+  margin-left: .5em;
+  font-size: 1.5em;
+  margin-top: .1em; 
+ 
+}
+
+.input-search{
+   width: 38%; 
+    margin-bottom: .5em;
+    font-size: 1em;
+ }

@@ -33,6 +33,7 @@ import { PenalComponent } from './normativa/codigos/penal/penal.component';
 import { CivilComponent } from './normativa/codigos/civil/civil.component';
 import { Constitucion1993Component } from './normativa/codigos/constitucion1993/constitucion1993.component';
 import { ConsumidorComponent } from './normativa/codigos/consumidor/consumidor.component';
+import { CodigoprocesalPenalComponent } from './normativa/codigos/codigoprocesal-penal/codigoprocesal-penal.component';
 
 
 
@@ -49,7 +50,8 @@ const routes: Routes = [
   { path: 'exposicion/penal', component: PenalComponent }, 
   { path: 'exposicion/civil', component: CivilComponent },
   { path: 'exposicion/constitucion1993', component: Constitucion1993Component },
-  { path: 'exposicion/consumidor', component: ConsumidorComponent}, 
+  { path: 'exposicion/consumidor', component: ConsumidorComponent},
+  { path: 'exposicion/codigoprocesal-penal', component: CodigoprocesalPenalComponent}, 
   { path: 'perfil', component: PerfilComponent }, 
 
 ];
@@ -73,7 +75,8 @@ const routes: Routes = [
     PenalComponent,
     CivilComponent,
     Constitucion1993Component,
-    ConsumidorComponent
+    ConsumidorComponent,
+    CodigoprocesalPenalComponent
   ],
   imports: [
     BrowserModule,

@@ -36,6 +36,7 @@ import { ConsumidorComponent } from './normativa/codigos/consumidor/consumidor.c
 import { CodigoprocesalPenalComponent } from './normativa/codigos/codigoprocesal-penal/codigoprocesal-penal.component';
 import { CodigoprocesalCivilComponent } from './normativa/codigos/codigoprocesal-civil/codigoprocesal-civil.component';
 import { CodigotributarioComponent } from './normativa/codigos/codigotributario/codigotributario.component';
+import { CodigodelninoyadolescenteComponent } from './normativa/codigos/codigodelninoyadolescente/codigodelninoyadolescente.component';
 
 
 
@@ -55,7 +56,8 @@ const routes: Routes = [
   { path: 'exposicion/consumidor', component: ConsumidorComponent},
   { path: 'exposicion/codigoprocesal-penal', component: CodigoprocesalPenalComponent},
   { path: 'exposicion/codigoprocesal-civil', component: CodigoprocesalCivilComponent},
-  { path: 'exposicion/codigotributario', component: CodigotributarioComponent}, 
+  { path: 'exposicion/codigotributario', component: CodigotributarioComponent},
+  { path: 'exposicion/codigodelninoyadolescente', component: CodigodelninoyadolescenteComponent}, 
   { path: 'perfil', component: PerfilComponent }, 
 
 ];
@@ -82,7 +84,8 @@ const routes: Routes = [
     ConsumidorComponent,
     CodigoprocesalPenalComponent,
     CodigoprocesalCivilComponent,
-    CodigotributarioComponent
+    CodigotributarioComponent,
+    CodigodelninoyadolescenteComponent
   ],
   imports: [
     BrowserModule,

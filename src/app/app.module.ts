@@ -69,7 +69,7 @@ const routes: Routes = [
   { path: 'exposicion/codigodeprocedimientospenales', component:CodigodeprocedimientospenalesComponent},
   { path: 'exposicion/codigoprocesalconstitucional', component:CodigoprocesalconstitucionalComponent},
   { path: 'exposicion/codigopenalmilitar', component:CodigopenalmilitarComponent},
-  { path: 'exposicion/codigodejecucionmilitar', component: CodigodeejecucionmilitarComponent},
+  { path: 'exposicion/codigodeejecucionmilitar', component: CodigodeejecucionmilitarComponent},
   { path: 'perfil', component: PerfilComponent }, 
 
 ];

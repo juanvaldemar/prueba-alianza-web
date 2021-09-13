@@ -39,6 +39,7 @@ import { CodigotributarioComponent } from './normativa/codigos/codigotributario/
 import { CodigodelninoyadolescenteComponent } from './normativa/codigos/codigodelninoyadolescente/codigodelninoyadolescente.component';
 import { CodigodecomercioComponent } from './normativa/codigos/codigodecomercio/codigodecomercio.component';
 import { CodigodeejecucionpenalComponent } from './normativa/codigos/codigodeejecucionpenal/codigodeejecucionpenal.component';
+import { CodigodeprocedimientospenalesComponent } from './normativa/codigos/codigodeprocedimientospenales/codigodeprocedimientospenales.component';
 
 
 
@@ -62,6 +63,7 @@ const routes: Routes = [
   { path: 'exposicion/codigodelninoyadolescente', component: CodigodelninoyadolescenteComponent}, 
   { path: 'exposicion/codigodecomercio', component:CodigodecomercioComponent},
   { path: 'exposicion/codigodeejecucionpenal', component:CodigodeejecucionpenalComponent},
+  { path: 'exposicion/codigodeprocedimientospenales', component:CodigodeprocedimientospenalesComponent},
   { path: 'perfil', component: PerfilComponent }, 
 
 ];
@@ -91,7 +93,8 @@ const routes: Routes = [
     CodigotributarioComponent,
     CodigodelninoyadolescenteComponent,
     CodigodecomercioComponent,
-    CodigodeejecucionpenalComponent
+    CodigodeejecucionpenalComponent,
+    CodigodeprocedimientospenalesComponent
   ],
   imports: [
     BrowserModule,

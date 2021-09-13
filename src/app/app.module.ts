@@ -41,6 +41,7 @@ import { CodigodecomercioComponent } from './normativa/codigos/codigodecomercio/
 import { CodigodeejecucionpenalComponent } from './normativa/codigos/codigodeejecucionpenal/codigodeejecucionpenal.component';
 import { CodigodeprocedimientospenalesComponent } from './normativa/codigos/codigodeprocedimientospenales/codigodeprocedimientospenales.component';
 import { CodigoprocesalconstitucionalComponent } from './normativa/codigos/codigoprocesalconstitucional/codigoprocesalconstitucional.component';
+import { CodigopenalmilitarComponent } from './normativa/codigos/codigopenalmilitar/codigopenalmilitar.component';
 
 
 
@@ -65,7 +66,8 @@ const routes: Routes = [
   { path: 'exposicion/codigodecomercio', component:CodigodecomercioComponent},
   { path: 'exposicion/codigodeejecucionpenal', component:CodigodeejecucionpenalComponent},
   { path: 'exposicion/codigodeprocedimientospenales', component:CodigodeprocedimientospenalesComponent},
-  { path: 'exposicion/codigoprocesalconstitucional', component:CodigoprocesalconstitucionalComponent}
+  { path: 'exposicion/codigoprocesalconstitucional', component:CodigoprocesalconstitucionalComponent},
+  { path: 'exposicion/codigopenalmilitar', component:CodigopenalmilitarComponent},
   { path: 'perfil', component: PerfilComponent }, 
 
 ];
@@ -97,7 +99,8 @@ const routes: Routes = [
     CodigodecomercioComponent,
     CodigodeejecucionpenalComponent,
     CodigodeprocedimientospenalesComponent,
-    CodigoprocesalconstitucionalComponent
+    CodigoprocesalconstitucionalComponent,
+    CodigopenalmilitarComponent
   ],
   imports: [
     BrowserModule,

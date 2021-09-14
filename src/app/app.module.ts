@@ -44,6 +44,7 @@ import { CodigoprocesalconstitucionalComponent } from './normativa/codigos/codig
 import { CodigopenalmilitarComponent } from './normativa/codigos/codigopenalmilitar/codigopenalmilitar.component';
 import { CodigodeejecucionmilitarComponent } from './normativa/codigos/codigodeejecucionmilitar/codigodeejecucionmilitar.component';
 import { Constitucion1979Component } from './normativa/codigos/constitucion1979/constitucion1979.component';
+import { TuoleyproadmComponent } from './normativa/codigos/tuoleyproadm/tuoleyproadm.component';
 
 
 
@@ -72,6 +73,7 @@ const routes: Routes = [
   { path: 'exposicion/codigopenalmilitar', component:CodigopenalmilitarComponent},
   { path: 'exposicion/codigodeejecucionmilitar', component: CodigodeejecucionmilitarComponent},
   { path: 'exposicion/constitucion1979', component: Constitucion1979Component},
+  { path: 'exposicion/tuoleyproadm', component: TuoleyproadmComponent},
   { path: 'perfil', component: PerfilComponent }, 
 
 ];
@@ -106,7 +108,8 @@ const routes: Routes = [
     CodigoprocesalconstitucionalComponent,
     CodigopenalmilitarComponent,
     CodigodeejecucionmilitarComponent,
-    Constitucion1979Component
+    Constitucion1979Component,
+    TuoleyproadmComponent
   ],
   imports: [
     BrowserModule,
